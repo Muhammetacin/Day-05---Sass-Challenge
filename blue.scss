@@ -1,2 +1,5 @@
-$linkColor: blue;
 @import './style.scss';
+$linkColor: blue;
+body {
+    color: $linkColor;
+}
