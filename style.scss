@@ -1,3 +1,5 @@
+$standard_padding: 16px;
+
 body {
   font: 100% "Space Mono", monospace;
   color: #2748b3;
@@ -32,7 +34,7 @@ article {
     -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
     -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
     box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-    padding: 16px;
+    padding: $standard_padding;
     margin: 16px;
     clear: both;
     overflow: auto;
@@ -54,7 +56,7 @@ article {
     margin-bottom: 1.6em;
     max-width: 100%;
     overflow: auto;
-    padding: 16px;
+    padding: $standard_padding;
     display: block;
     white-space: pre-wrap;
 
@@ -81,13 +83,13 @@ h1 {
 h6 {
   text-align: center;
   font-size: 2em;
-  padding: 32px;
+  padding: $standard_padding * 2;
   margin-bottom: 0px;
 }
 
 .message, .success, .error, .warning {
   border: 1px solid #ccc;
-  padding: 16px;
+  padding: $standard_padding;
   margin: 16px;
   color: #2748b3;
   background-color: #000;
