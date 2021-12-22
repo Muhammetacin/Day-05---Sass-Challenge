@@ -96,10 +96,7 @@ h6 {
   margin-bottom: 0px;
 }
 
-.message,
-.success,
-.error,
-.warning {
+.standard-message {
   border: 1px solid #ccc;
   padding: $standard_padding;
   margin: 16px;
@@ -108,14 +105,17 @@ h6 {
 }
 
 .success {
+  @extend .standard-message;
   background-color: green;
 }
 
 .error {
+  @extend .standard-message;
   background-color: red;
 }
 
 .warning {
+  @extend .standard-message;
   background-color: orange;
 }
 
