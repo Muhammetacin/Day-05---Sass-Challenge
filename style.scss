@@ -1,4 +1,12 @@
+// Defining a variable here
 $standard_padding: 16px;
+
+// Defining mixin here
+@mixin box-shadow {
+  -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+  box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+}
 
 body {
   font: 100% "Space Mono", monospace;
@@ -31,9 +39,8 @@ article {
     flex-grow: 1;
     flex-basis: 45%;
     border: 1px silver solid;
-    -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-    -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-    box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+    // This is how you include the mixin in your code
+    @include box-shadow();
     padding: $standard_padding;
     margin: 16px;
     clear: both;
@@ -72,7 +79,9 @@ article {
   }
 }
 
-h1, h2, h6 {
+h1,
+h2,
+h6 {
   color: #6b8eff;
 }
 
@@ -87,7 +96,10 @@ h6 {
   margin-bottom: 0px;
 }
 
-.message, .success, .error, .warning {
+.message,
+.success,
+.error,
+.warning {
   border: 1px solid #ccc;
   padding: $standard_padding;
   margin: 16px;
