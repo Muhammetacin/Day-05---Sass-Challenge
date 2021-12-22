@@ -1,5 +1,6 @@
 // Defining a variable here
 $standard_padding: 16px;
+$linkColor: green;
 
 // Defining mixin here
 @mixin box-shadow {
@@ -10,7 +11,7 @@ $standard_padding: 16px;
 
 body {
   font: 100% "Space Mono", monospace;
-  color: #2748b3;
+  color: $linkColor;
   margin: 0px;
   padding: 0px;
   background-color: #000;
@@ -96,7 +97,7 @@ h6 {
   margin-bottom: 0px;
 }
 
-.standard-message {
+%message {
   border: 1px solid #ccc;
   padding: $standard_padding;
   margin: 16px;
@@ -105,22 +106,22 @@ h6 {
 }
 
 .success {
-  @extend .standard-message;
+  @extend %message;
   background-color: green;
 }
 
 .error {
-  @extend .standard-message;
+  @extend %message;
   background-color: red;
 }
 
 .warning {
-  @extend .standard-message;
+  @extend %message;
   background-color: orange;
 }
 
-.red-blue-links {
-  @extend .standard-message;
+.link-colors {
+  @extend %message;
   background-color: white;
 }
 
