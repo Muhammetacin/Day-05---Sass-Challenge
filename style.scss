@@ -119,5 +119,10 @@ h6 {
   background-color: orange;
 }
 
+.red-blue-links {
+  @extend .standard-message;
+  background-color: white;
+}
+
 // To watch Sass minified version use this command (Nice to have)
 // sass --watch a.scss:a.css --style compressed

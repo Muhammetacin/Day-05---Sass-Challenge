@@ -85,7 +85,7 @@ h6 {
   margin-bottom: 0px;
 }
 
-.standard-message, .success, .error, .warning {
+.standard-message, .success, .error, .warning, .red-blue-links {
   border: 1px solid #ccc;
   padding: 16px;
   margin: 16px;
@@ -103,5 +103,9 @@ h6 {
 
 .warning {
   background-color: orange;
+}
+
+.red-blue-links {
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
