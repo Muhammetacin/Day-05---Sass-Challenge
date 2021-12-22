@@ -1,4 +1,4 @@
-# Day-05---Sass-Challenge
+# Day 05 - Sass-Challenge
 
 Home (or index) page shows the text in yellow color. By using only one css base (style.scss) I change the color of the text to red (red.html) and blue (blue.html).
 
